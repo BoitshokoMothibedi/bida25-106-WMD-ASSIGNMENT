@@ -5,7 +5,14 @@
 <meta charset="UTF-8">
 <title>Customer Feedback</title>
 <link rel="stylesheet" href="css/style.css">
+<link
+href="https://cdn.jsdeliver.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet">
 </head>
+
+<script
+src="href="https://cdn.jsdeliver.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/js/script"></script>
 
 <body>
 
@@ -29,28 +36,54 @@
 
 <form>
 
-<label>Name</label>
-<input type="text" required>
+<div class="container py-5">
 
-<label>Email</label>
-<input type="email" required>
+    <div class="row justify-content-center">
 
-<label>Phone</label>
-<input type="tel" required>
+        <div class="col-md-8">
 
-<label>Message</label>
-<textarea required></textarea>
+            <div class="card shadow p-4">
 
-<br><br>
+                <h2 class="mb-4 text-center">
+                    Customer Feedback
+                </h2>
 
-<button type="submit">Submit</button>
+                <form>
 
-</form>
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control"required>
+                    </div>
 
-</section>
+                    <div class="mb-3">
+                        <label class="form-label">Email Adress</label>
+                        <input type="text" class="form-control"required>
+                    </div>
 
-<footer>
-<p> 2025 iConnect Mobile</p>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <input type="text" class="form-control" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Submit Feedback
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<footer class="bg-dark text-white text-center p-4">
+
+    <p>
+        &copy; 2026 iConnect Mobile. All rights Reserved.
+    </p>
+
 </footer>
 
 </body>
