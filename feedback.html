@@ -2,86 +2,309 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<title>Customer Feedback</title>
-<link rel="stylesheet" href="style.css">
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback | iConnect Mobile</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
 
 <body>
 
-<header>
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="index.html">
+<i class="bi bi-phone"></i>
+iConnect Mobile
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="products.html">Products</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="cart.html">Cart</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="feedback.html">Feedback</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Header -->
+
+<section class="bg-dark text-white text-center py-5">
+
+<div class="container">
 
 <h1>Customer Feedback</h1>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="iphones.html">iPhones</a>
-<a href="cart.html">Cart</a>
-<a href="feedback.html">Feedback</a>
-</nav>
+<p class="lead">
 
-</header>
+Your opinion helps us improve our products and services.
 
-<section>
+</p>
 
-<h2>Send Us Your Feedback</h2>
+</div>
+
+</section>
+
+<!-- Feedback Form -->
+
+<section class="container py-5">
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8">
 
 <form>
 
-<div class="container py-5">
+<div class="mb-3">
 
-    <div class="row justify-content-center">
+<label class="form-label">Full Name</label>
 
-        <div class="col-md-8">
+<input
+type="text"
+class="form-control"
+placeholder="Enter your full name"
+required>
 
-            <div class="card shadow p-4">
-
-                <h2 class="mb-4 text-center">
-                    Customer Feedback
-                </h2>
-
-                <form>
-
-                    <div class="mb-3">
-                        <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control"required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Email Adress</label>
-                        <input type="text" class="form-control"required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Message</label>
-                        <input type="text" class="form-control" rows="5" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary w-100">
-                        Submit Feedback
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-    </div>
 </div>
 
+<div class="mb-3">
 
-<footer class="bg-dark text-white text-center p-4">
+<label class="form-label">Email Address</label>
 
-    <p>
-        &copy; 2026 iConnect Mobile. All rights Reserved.
-    </p>
+<input
+type="email"
+class="form-control"
+placeholder="Enter your email"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Which product did you purchase?</label>
+
+<select class="form-select">
+
+<option>Select a product</option>
+
+<option>iPhone 16 Pro</option>
+
+<option>iPhone 15</option>
+
+<option>iPhone 14</option>
+
+<option>iPhone 13</option>
+
+<option>iPhone 12</option>
+
+<option>iPhone 11</option>
+
+</select>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Rate Your Experience</label>
+
+<select class="form-select">
+
+<option>⭐⭐⭐⭐⭐ Excellent</option>
+
+<option>⭐⭐⭐⭐ Very Good</option>
+
+<option>⭐⭐⭐ Good</option>
+
+<option>⭐⭐ Fair</option>
+
+<option>⭐ Poor</option>
+
+</select>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Additional Comments</label>
+
+<textarea
+class="form-control"
+rows="6"
+placeholder="Tell us about your experience..."
+required></textarea>
+
+</div>
+
+<div class="form-check mb-4">
+
+<input class="form-check-input"
+type="checkbox"
+required>
+
+<label class="form-check-label">
+
+I confirm that this feedback is based on my own experience.
+
+</label>
+
+</div>
+
+<button class="btn btn-primary btn-lg w-100">
+
+<i class="bi bi-chat-left-dots-fill"></i>
+
+Submit Feedback
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Testimonials -->
+
+<section class="container pb-5">
+
+<h2 class="text-center mb-5">
+
+What Our Customers Say
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card shadow p-4">
+
+<h5>⭐⭐⭐⭐⭐</h5>
+
+<p>
+
+"The service was excellent and my iPhone arrived on time."
+
+</p>
+
+<strong>- Sarah M.</strong>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow p-4">
+
+<h5>⭐⭐⭐⭐⭐</h5>
+
+<p>
+
+"Very professional staff and genuine Apple products."
+
+</p>
+
+<strong>- David K.</strong>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow p-4">
+
+<h5>⭐⭐⭐⭐⭐</h5>
+
+<p>
+
+"I highly recommend iConnect Mobile to anyone buying an iPhone."
+
+</p>
+
+<strong>- Thabo N.</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<div class="container">
+
+<p>
+
+© 2026 iConnect Mobile | All Rights Reserved
+
+</p>
+
+</div>
 
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-</html> 
+
+</html>

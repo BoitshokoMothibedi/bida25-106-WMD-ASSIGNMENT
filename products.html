@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | iConnect Mobile</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="index.html">
+<i class="bi bi-phone"></i>
+iConnect Mobile
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+<li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+
+<li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+<li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Header -->
+
+<section class="bg-dark text-white text-center py-5">
+
+<div class="container">
+
+<h1>Our Products</h1>
+
+<p class="lead">Browse our latest Apple iPhones.</p>
+
+</div>
+
+</section>
+
+<!-- Search -->
+
+<section class="container mt-5">
+
+<div class="row justify-content-center">
+
+<div class="col-md-6">
+
+<input type="text" id="searchInput" class="form-control form-control-lg"
+placeholder="Search iPhone...">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Products -->
+
+<section class="container py-5">
+
+<div class="row g-4" id="productList">
+
+<!-- Product 1 -->
+
+<div class="col-lg-4 product">
+
+<div class="card shadow">
+
+<img src="images/iphone16.jpg" class="card-img-top product-image">
+
+<div class="card-body">
+
+<h4>iPhone 16 Pro</h4>
+
+<p>256GB | Black Titanium</p>
+
+<h5>P19,999</h5>
+
+<button class="btn btn-primary w-100"
+onclick="addToCart('iPhone 16 Pro',19999)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 2 -->
+
+<div class="col-lg-4 product">
+
+<div class="card shadow">
+
+<img src="images/iphone15.jpg" class="card-img-top product-image">
+
+<div class="card-body">
+
+<h4>iPhone 15</h4>
+
+<p>128GB | Blue</p>
+
+<h5>P15,999</h5>
+
+<button class="btn btn-primary w-100"
+onclick="addToCart('iPhone 15',15999)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 3 -->
+
+<div class="col-lg-4 product">
+
+<div class="card shadow">
+
+<img src="images/iphone14.jpg" class="card-img-top product-image">
+
+<div class="card-body">
+
+<h4>iPhone 14</h4>
+
+<p>128GB | Purple</p>
+
+<h5>P12,999</h5>
+
+<button class="btn btn-primary w-100"
+onclick="addToCart('iPhone 14',12999)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 4 -->
+
+<div class="col-lg-4 product">
+
+<div class="card shadow">
+
+<img src="images/iphone13.jpg" class="card-img-top product-image">
+
+<div class="card-body">
+
+<h4>iPhone 13</h4>
+
+<p>128GB | Midnight</p>
+
+<h5>P10,999</h5>
+
+<button class="btn btn-primary w-100"
+onclick="addToCart('iPhone 13',10999)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 5 -->
+
+<div class="col-lg-4 product">
+
+<div class="card shadow">
+
+<img src="images/iphone12.jpg" class="card-img-top product-image">
+
+<div class="card-body">
+
+<h4>iPhone 12</h4>
+
+<p>128GB | White</p>
+
+<h5>P8,999</h5>
+
+<button class="btn btn-primary w-100"
+onclick="addToCart('iPhone 12',8999)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 6 -->
+
+<div class="col-lg-4 product">
+
+<div class="card shadow">
+
+<img src="images/iphone11.jpg" class="card-img-top product-image">
+
+<div class="card-body">
+
+<h4>iPhone 11</h4>
+
+<p>64GB | Black</p>
+
+<h5>P6,999</h5>
+
+<button class="btn btn-primary w-100"
+onclick="addToCart('iPhone 11',6999)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<div class="container">
+
+<p>© 2026 iConnect Mobile | All Rights Reserved</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script src="js/cart.js"></script>
+
+</body>
+
+</html>
